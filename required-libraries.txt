@@ -1,0 +1,4 @@
+pillow
+pygame
+opencv-python
+blessed
