@@ -82,7 +82,7 @@ def generate_frame(image, new_width = size):
     new_image_data = pix2chars(resized_gray_image(image))
     total_pixels = len(new_image_data)
     ascii_image = '\n'.join([new_image_data[index:index + new_width] for index in range(0, total_pixels, new_width)])
-    sys.stdout.write('\n' * 20 + ascii_image + '\n')
+    sys.stdout.write('\n' * 20 + ascii_image + '')
 
 cap = cv2.VideoCapture(video)
 
@@ -91,7 +91,6 @@ try:
         os.system('color F0')
         while True:
             (ret, frame) = cap.read()
-            start_time = time.time()
             generate_frame(Image.fromarray(frame))
             cv2.waitKey(waitKey)
     else:
