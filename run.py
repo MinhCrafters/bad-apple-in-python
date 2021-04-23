@@ -16,7 +16,7 @@ sys.tracebacklimit = 0
 term = Terminal()
 
 ASCII_CHARS = ['@', '#', 'S', '%', '?', '*', '+', ';', ':', ',', ' ']
-TIPS = ['Set scrollback limit to 2,000,000 lines to fix stutter problem (on Linux).', 'Turn off all background and/or foreground processes that makes CPU load > 10% for proper frame timing.']
+TIPS = ['Set scrollback limit to 2,000,000 lines to fix stutter problem (on Linux).', 'Turn off running background and/or foreground processes for proper frame timing.']
 
 isusingsong = None
 
@@ -38,7 +38,7 @@ os.system(('cls' if os.name == 'nt' else 'clear'))
 print(term.home + term.clear)
 print(term.center('\033[90m----------------------------------------------\033[37m'))
 print(term.center('\033[34mBad Apple!! on CMD using OpenCV and Pygame\033[37m'))
-print(term.center('\033[94mBy MinhCrafters\033[37m'))
+print(term.center('\033[94mBy MinhCrafters | Original by Foxy\033[37m'))
 print(term.center('\033[34mLinux and Windows only.\033[37m'))
 print(term.center('\033[90m----------------------------------------------\033[37m\n'))
 
