@@ -47,13 +47,13 @@ print(term.center('\033[91mTIP: ' + random.choice(TIPS) + '\033[37m\n'))
 try:
     pygame.mixer.init()
     pygame.mixer.music.load(audio)
-    print('\033[92mAudio found. Enabling audio...\033[37m')
+    print(term.center('\033[92mAudio found. Enabling audio...\033[37m'))
     isusingsong = True
-    print('\033[92mAudio enabled. Proceeding to animation...\033[37m')
+    print(term.center('\033[92mAudio enabled. Proceeding to animation...\033[37m'))
 except:
-    print('\033[91mAudio not found. Disabling audio...\033[37m')
+    print(term.center('\033[91mAudio not found. Disabling audio...\033[37m'))
     isusingsong = False
-    print('\033[92mAudio disabled. Proceeding to animation...\033[37m')
+    print(term.center('\033[92mAudio disabled. Proceeding to animation...\033[37m'))
 
 if isusingsong == True:
     time.sleep(5)
