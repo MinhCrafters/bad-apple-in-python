@@ -4,4 +4,4 @@ This is a Python script that converts frames of the Bad Apple video (or any vide
 
 Requires Python 3.6+. For Windows and Linux only.
 
-![image](Screenshot from 2021-05-27 23-15-58.png)
+![image](/Screenshot from 2021-05-27 23-15-58.png)
