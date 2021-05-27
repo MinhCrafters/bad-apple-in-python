@@ -22,23 +22,24 @@ isusingsong = None
 
 audio = "bad-apple-xp-7-audio.wav" # Audio location (leave empty for no audio)
 video = "BadApple.mp4" # Video location (don't delete this)
-size = 200 # Command line render video size
-waitKey = 20 # waitKey (for video and audio synchronization) (Windows only)
+size = 150 # Command line render video size
 frame_interval = 1 / 31 # Frame interval for syncing audio with video (0.0329)
 
 if os.name == 'nt':
-    subprocess.Popen(["mode", "con:", "cols=75", "lines=200"])
+    subprocess.Popen(["mode", "con:", "cols=150", "lines=56"], shell=True)
     time.sleep(0.1)
 else:
-    print("\x1b[8;75;200t")
+    print("\x1b[8;56;150t")
     time.sleep(0.1)
 
 os.system(('cls' if os.name == 'nt' else 'clear'))
 
+os.system('color F0' if os.name == 'nt' else 'clear')
+
 print(term.home + term.clear)
 print(term.center('\033[90m----------------------------------------------\033[37m'))
 print(term.center('\033[34mBad Apple!! on CMD using OpenCV and Pygame\033[37m'))
-print(term.center('\033[94mBy MinhCrafters | Original by Foxy\033[37m'))
+print(term.center('\033[94mBy MinhCrafters\033[37m'))
 print(term.center('\033[34mLinux and Windows only.\033[37m'))
 print(term.center('\033[90m----------------------------------------------\033[37m\n'))
 
@@ -92,7 +93,7 @@ try:
         while True:
             (ret, frame) = cap.read()
             generate_frame(Image.fromarray(frame))
-            cv2.waitKey(waitKey)
+            cv2.waitKey(28)
     else:
         while True:
             (ret, frame) = cap.read()
@@ -107,7 +108,7 @@ try:
             time.sleep(delay_duration)
 except:
     if (os.name == 'nt'):
-        os.system('color')
+        os.system('color 07')
         os.system('cls')
         print(term.center('\n\033[91mSTOPPED\033[37m\n'))
         exit
