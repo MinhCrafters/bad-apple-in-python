@@ -65,6 +65,9 @@ else:
     time.sleep(5)
     os.system(('cls' if os.name == 'nt' else 'clear'))
 
+if not os.name == 'nt':
+    print('\033[30m')
+
 def resized_gray_image(image, new_width = size):
     (width, height) = image.size
     width = width * 2
