@@ -35,7 +35,7 @@ else:
 
 os.system(('cls' if os.name == 'nt' else 'clear'))
 
-os.system('color F0' if os.name == 'nt' else 'clear')
+os.system('color F0' if os.name == 'nt' else '\033[107m')
 
 print(term.home + term.clear)
 print(term.center('\033[90m----------------------------------------------\033[37m'))
