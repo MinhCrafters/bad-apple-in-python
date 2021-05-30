@@ -7,7 +7,7 @@ Requires Python 3.6+. For Windows and Linux only.
 ![image](image.png)
 
 ## **Download**
-You can download it ![here](https://github.com/MinhCrafters/bad-apple-in-python/archive/refs/heads/master.zip)
+You can download it [here](https://github.com/MinhCrafters/bad-apple-in-python/archive/refs/heads/master.zip)
 
 ## **My social media**
 
