@@ -14,6 +14,6 @@ Requires Python 3.6+. For Windows and Linux only.
 
 ## **My social media**
 
-* Discord: simplyminh#3795
+* Discord: simplyminh#5973
 * Twitter: @MinhCrafters
 * YouTube: MinhCrafters
